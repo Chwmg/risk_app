@@ -1,0 +1,18 @@
+{
+  "features": [
+    "age",
+    "stab.glu",
+    "chol",
+    "hdl",
+    "bp.1s",
+    "bp.1d",
+    "weight",
+    "waist",
+    "hip"
+  ],
+  "threshold": 0.25,
+  "target": "risk",
+  "rule": "risk = 1 if glyhb >= 6.5 else 0",
+  "model_type": "RandomForestClassifier(class_weight='balanced')",
+  "primary_metric": "recall"
+}
